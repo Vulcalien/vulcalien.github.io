@@ -5,3 +5,21 @@ title = "Vulcalien's website"
 theme = 'PaperMod'
 
 copyright = 'Copyright 2023 Vulcalien'
+
+[menu]
+    [[menu.main]]
+        name = 'Home'
+        pageref = '/'
+        weight = 1
+    [[menu.main]]
+        name = 'Projects'
+        pageref = '/projects'
+        weight = 2
+    [[menu.main]]
+        name = 'Contact'
+        pageref = '/contact'
+        weight = 3
+    [[menu.main]]
+        name = 'GitHub'
+        url = 'https://github.com/Vulcalien'
+        weight = 4
