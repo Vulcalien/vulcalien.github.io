@@ -1,0 +1,7 @@
+baseURL = 'https://vulcalien.net/'
+languageCode = 'en-us'
+title = "Vulcalien's website"
+
+theme = 'PaperMod'
+
+copyright = 'Copyright 2023 Vulcalien'
