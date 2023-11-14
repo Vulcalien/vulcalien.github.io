@@ -6,6 +6,9 @@ theme = 'PaperMod'
 
 copyright = 'Copyright 2023 Vulcalien'
 
+[markup.goldmark.renderer]
+    unsafe = true
+
 [menu]
     [[menu.main]]
         name = 'Home'
