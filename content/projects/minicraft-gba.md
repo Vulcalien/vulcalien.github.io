@@ -5,7 +5,7 @@ date = '2023-11-14'
 
 <center>
 <img src="/images/minicraft-gba-boxart.png"
-     width="350" height="350">
+     style="width: 22rem">
 </center>
 
 Minicraft for GBA is a demake of the game
