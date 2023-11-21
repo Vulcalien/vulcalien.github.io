@@ -1,10 +1,10 @@
 baseURL = 'https://vulcalien.net/'
-languageCode = 'en-us'
 title = "Vulcalien's website"
+copyright = 'Copyright 2023 Vulcalien'
+
+languageCode = 'en'
 
 theme = 'PaperMod'
-
-copyright = 'Copyright 2023 Vulcalien'
 
 [markup.goldmark.renderer]
     unsafe = true
