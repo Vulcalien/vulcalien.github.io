@@ -15,14 +15,18 @@ theme = 'PaperMod'
         pageref = '/'
         weight = 1
     [[menu.main]]
+        name = 'Blog'
+        pageref = '/blog'
+        weight = 2
+    [[menu.main]]
         name = 'Projects'
         pageref = '/projects'
-        weight = 2
+        weight = 3
     [[menu.main]]
         name = 'Contact'
         pageref = '/contact'
-        weight = 3
+        weight = 4
     [[menu.main]]
         name = 'GitHub'
         url = 'https://github.com/Vulcalien'
-        weight = 4
+        weight = 5
