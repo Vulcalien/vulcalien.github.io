@@ -16,8 +16,7 @@ around those 60x20 characters.
 
 <center>
 <figure>
-<img src="/images/snake-cli.png"
-     style="width: 40rem">
+<img src="snake-cli.png" style="width: 40rem">
 <figcaption style="font-weight: normal">
 Snake-CLI, a small terminal game I made using libcliscreen
 </figcaption>
@@ -34,8 +33,7 @@ may be useful when using them.
 
 <center>
 <figure>
-<img src="/images/libcliscreen-manpage.png"
-     style="width: 40rem">
+<img src="manpage.png" style="width: 40rem">
 <figcaption style="font-weight: normal">
 Manpage for the cliscreen_create function
 </figcaption>
