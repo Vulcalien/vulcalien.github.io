@@ -9,6 +9,9 @@ theme = 'PaperMod'
 [markup.goldmark.renderer]
     unsafe = true
 
+[params]
+    mainSections = ['blog', 'projects']
+
 [menu]
     [[menu.main]]
         name = 'Home'
