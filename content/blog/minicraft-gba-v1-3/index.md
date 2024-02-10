@@ -1,6 +1,6 @@
 +++
 title = 'Minicraft for GBA v1.3'
-date = '2024-02-09'
+date = '2024-02-10'
 draft = true
 
 showtoc = true
@@ -81,3 +81,72 @@ prevent the player from loading the world.
 For those who already had a save file from an older version, don't
 worry! The warning message will appear (because there is no checksum
 written in the file) but the world should load without any problem.
+
+## Fixing the in-game clock
+
+<center>
+<img src="pause.png"
+     style="width: 30rem">
+</center>
+
+In the pause, death and win menus there is a digital clock that keeps
+track of how much time a world has been played on. Before version 1.3,
+the displayed time was inaccurate.
+
+The function responsible for calculating hours/minutes/seconds and
+drawing the clock is `screen_write_time`. This is how the calculation
+was done before:
+```C
+void screen_write_time(u32 time, ...) {
+    ...
+    u32 seconds = time    / 60;
+    u32 minutes = seconds / 60;
+    u32 hours   = minutes / 60;
+    ...
+}
+```
+
+The `time` parameter represents the number of times that the world has
+received an update. What's wrong with calculation is that the world
+**does not** update 60 times a second.
+
+The world updates at the same frequency at which the GBA's display gets
+refreshed, which is not 60 Hz, but about 59.7275 Hz. The code must thus
+consider this while calculating the `seconds` variable:
+```C
+static inline u32 ticks_to_seconds(u32 ticks) {
+    // refresh time:    280_896    cycles = 4389   * 64 cycles
+    // clock frequency: 16_777_216 Hz     = 262144 * 64 Hz
+    //
+    // framerate = (clock frequency) / (refresh time)
+    // time = ticks / framerate
+    //      = (ticks * 4389) / 262144
+    //      = (ticks * 4389) >> 18
+
+    return (((u64) ticks) * 4389) >> 18;
+}
+
+void screen_write_time(u32 ticks, ...) {
+    ...
+    u32 seconds = ticks_to_seconds(ticks);
+    u32 minutes = seconds / 60;
+    u32 hours   = minutes / 60;
+    ...
+}
+```
+
+Here's a table showing time calculated with both the previous and the
+updated formula:
+
+<center>
+
+| Game ticks | Old formula | New formula |
+| ---------- | ----------- | ----------- |
+| 600        | 0h 00m 10s  | 0h 00m 10s  |
+| 10000      | 0h 02m 46s  | 0h 02m 47s  |
+| 216000     | 1h 00m 00s  | 1h 00m 16s  |
+| 1000000    | 4h 37m 46s  | 4h 39m 02s  |
+
+</center>
+
+## TODO optimized entity sorting
