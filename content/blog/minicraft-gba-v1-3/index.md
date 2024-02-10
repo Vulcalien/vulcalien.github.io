@@ -1,7 +1,6 @@
 +++
 title = 'Minicraft for GBA v1.3'
 date = '2024-02-10'
-draft = true
 
 showtoc = true
 +++

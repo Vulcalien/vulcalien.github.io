@@ -32,6 +32,10 @@ the hardware through hardware registers.
 
 ---
 
+Read more:\
+update v1.3:
+[click here](/blog/minicraft-gba-v1-3)
+
 View on GitHub:
 [click here](https://github.com/vulcalien/minicraft-gba)\
 Download:
