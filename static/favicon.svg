@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100"
+   height="100"
+   viewBox="0 0 26.458333 26.458333"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter226"
+       x="-0.14438017"
+       y="-0.15975391"
+       width="1.3194161"
+       height="1.3005469">
+      <feGaussianBlur
+         stdDeviation="0.70835777"
+         id="feGaussianBlur226" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter1"
+       x="-0.37873062"
+       y="-0.19903766"
+       width="1.7574612"
+       height="1.3980753">
+      <feGaussianBlur
+         stdDeviation="0.70835777"
+         id="feGaussianBlur1" />
+    </filter>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath6">
+      <path
+         id="path7"
+         style="display:inline;fill:#000000;stroke:none;stroke-width:0.18561"
+         d="M 155.46391,44.092419 V 12.741001 m 0,0 h 31.35141 m 0,0 v 31.351418 m 0,0 h -31.35141 m 9.97686,-22.652765 h -3.55123 l 8.05641,13.95411 h 2.38734 l 8.05641,-13.95411 h -3.55123 l -5.69885,9.870701 z" />
+    </clipPath>
+  </defs>
+  <path
+     style="display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.338069;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+     d="M 5.9474865,4.314274 H 1.4099228 L 11.703954,22.144058 h 3.05041 L 25.048396,4.314274 H 20.510832 L 13.22916,16.926506 Z"
+     id="path23"
+     transform="matrix(1.1156229,0,0,1.1156229,-1.5295863,-1.5295953)" />
+  <path
+     id="path15"
+     clip-path="url(#clipPath6)"
+     style="display:inline;fill:none;stroke:#bbbbbb;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter226)"
+     transform="matrix(1.4254808,0,0,1.4254808,-230.72707,-27.278308)"
+     d="m 172.3333,35.393764 8.05641,-13.95411 h -3.55123 m -11.3977,0 5.69885,9.8707" />
+</svg>
