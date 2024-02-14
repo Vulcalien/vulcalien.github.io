@@ -11,7 +11,7 @@ console the game is for. For example, this is the box cover of
 'Minicraft for GBA'.
 
 <center>
-<img src="/images/minicraft-gba-boxart.png"
+<img src="/images/minicraft-gba-boxart.webp"
      style="width: 22rem">
 </center>
 
@@ -19,7 +19,7 @@ I decided to redraw that left-side label in SVG format, making it much
 easier to modify than if it were in a bitmap format. I publish this
 image in the hope that someone else might find this useful. 
 
-<img src="gba-cover-label-1024.png"
+<img src="gba-cover-label.webp"
      style="width: 100%">
 
 ## Downloads

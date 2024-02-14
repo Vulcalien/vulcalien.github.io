@@ -4,7 +4,7 @@ date = '2023-11-14'
 +++
 
 <center>
-<img src="/images/minicraft-gba-boxart.png"
+<img src="/images/minicraft-gba-boxart.webp"
      style="width: 22rem">
 </center>
 
