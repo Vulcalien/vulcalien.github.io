@@ -3,8 +3,6 @@ title = 'The Minecraft castle of Jeanneville'
 date = '2024-02-15'
 
 showtoc = true
-
-draft = true
 +++
 
 <center>
@@ -13,7 +11,7 @@ draft = true
      style="width: 100%">
 </center>
 
-In a Minecraft world in which I used to play there is a village called
+In a Minecraft world in which I used to play, there is a village called
 *Jeanneville*. Looking over that village and the nearby plains is a
 castle, the *castle of Jeanneville*.
 
@@ -25,9 +23,9 @@ goal of the project.
 
 ## Brief history
 
-In 2019, I and two friends started playing on a multiplayer survival
-world. I began building the castle that year. During 2020 and 2021 I
-kept playing on that world from time to time, improving the castle and
+In 2019, I and two friends started playing in a multiplayer survival
+world. I began building the castle that year. During 2020 and 2021, I
+kept playing in that world from time to time, improving the castle and
 building the village.
 
 ### The name
@@ -51,8 +49,8 @@ has four floors, while the tower has an additional 3 floors.
 ### Storage room
 
 The ground floor is used for storage. It contains an organized system of
-chests and barrels used for storing all the resources I need. It is in
-here that my precious materials (i.e. diamonds, gold...) are stored.
+chests and barrels used for storing all the resources I need. It is here
+that my precious materials (i.e. diamonds, gold...) are stored.
 
 <center>
 <img src="keep/storage.webp"
@@ -63,8 +61,7 @@ here that my precious materials (i.e. diamonds, gold...) are stored.
 ### Great hall and kitchen
 
 In the first floor, the one where the entrance is, there is the *great
-hall* and a functioning kitchen. Near the entrance, two spiral
-staircases bring to other parts of the castle.
+hall* and a functioning kitchen.
 
 <center>
 <img src="keep/great-hall.webp"
@@ -78,10 +75,10 @@ staircases bring to other parts of the castle.
 
 ### Garrison quarters
 
-One of those staircases near the entrance brings to the second floor,
-used as garrison quarters. The quarters can host up to 20 soldiers, each
-equipped with a sword and armor. There is, in the middle, a mess hall in
-which soldiers can convene.
+A spiral staircase near the entrance takes to the second floor, which is
+used as garrison quarters. The quarters can host up to twenty soldiers,
+each equipped with a sword and armor. There is, in the middle, a mess
+hall in which soldiers can convene.
 
 Thanks to the **Armor Statues** *data pack*, the item racks really work,
 so swords and other items can be taken or deposited by right-clicking on
@@ -128,12 +125,12 @@ two main buildings in the courtyard are the chapel and the horse stable.
 
 ### Chapel
 
-Found next to the castle's well is a chapel dedicated to Sainte Jeanne
-d'Arc. While simple on the outside, it is richly decorated inside,
+Found next to the castle's well is a chapel dedicated to Saint Joan of
+Arc. While simple on the outside, the chapel is richly decorated inside,
 containing a diamond Cross, a set of golden ciborium and chalice (both
 built using the *Armor Statues data pack*) and two images. The first
-image is of Saint Joan of Arc, while the second is of the Virgin Mary,
-Saint Joan and Saint Thérèse of Lisieux.
+image is of Saint Joan of Arc and Saint Michael, while the second is of
+the Virgin Mary, Saint Joan and Saint Thérèse of Lisieux.
 
 <center>
 <img src="courtyard/chapel-outside.webp"
@@ -160,9 +157,9 @@ up to three horses can stay.
 
 The walls defending the castle have two separate levels: the inner level
 surrounds the keep, while the outer level surrounds the courtyard.
-Through the entire perimeter of the walls are
+Throughout the entire perimeter of the walls are
 [machicolations](https://en.wikipedia.org/wiki/Machicolation),
-allowing archers standing on top of them to shoot arrows at the
+allowing archers standing on top of the walls to shoot arrows at the
 invaders while keeping themselves mostly protected.
 
 <center>
@@ -174,7 +171,7 @@ invaders while keeping themselves mostly protected.
 ### Gatehouse
 
 The castle of Jeanneville is built on top of a steep hill, with only one
-side gentle enough to allow for walking. That side, in which the road to
+side gentle enough to allow for walking. That side, on which the road to
 the village is also built, is defended by the gatehouse. Being the first
 line of defence, it controls two sliding gates and has two
 [murder holes](https://en.wikipedia.org/wiki/Murder_hole)
@@ -207,11 +204,11 @@ horse stable.
 ### Church
 
 The church of 'Mater Misericordiae' is built in the
-[gothic style](https://en.wikipedia.org/wiki/Gothic_architecture),
+[Gothic style](https://en.wikipedia.org/wiki/Gothic_architecture),
 with a central *nave* and two *aisles*. On its side there is a bell
 tower.
 
-Right by the entrance, there is a statue of Sainte Jeanne d'Arc loosely
+Right by the entrance, there is a statue of Saint Joan of Arc loosely
 inspired by
 [this painting](https://commons.wikimedia.org/wiki/File:Scherrer_jeanne_enters_orlean.jpg)
 made by
@@ -241,8 +238,8 @@ In the village and in the nearby area, there are many houses. Each is
 unique, both in the way it is built and in its function. For example,
 one house is also the blacksmith's workshop, another is a bakery...
 
-Most of the houses share the same style: the ground floor made of stone
-and the higher floors
+Most of the houses share the same style: the ground floor is made of
+stone and the higher floors are
 [half-timbered](https://en.wikipedia.org/wiki/Timber_framing)
 and
 [jettied](https://en.wikipedia.org/wiki/Jettying).
@@ -266,12 +263,13 @@ attic, used as additional storage or to fit more beds.
 
 ## More screenshots
 
-Here are a few more screenshots of the castle. These were made using the
+Here are a few more screenshots of the castle. These were made with the
 [Iris Shaders](https://irisshaders.dev/)
 mod (for
 [Fabric](https://fabricmc.net/))
 and
-[Sildur's Shaders](https://sildurs-shaders.github.io/).
+[Sildur's Shaders](https://sildurs-shaders.github.io/)
+on.
 
 <center>
 <img src="screenshots/1.webp"
