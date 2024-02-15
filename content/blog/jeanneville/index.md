@@ -27,14 +27,14 @@ goal of the project.
 
 In 2019, I and two friends started playing on a multiplayer survival
 world. I began building the castle that year. During 2020 and 2021 I
-kept playing on that world from time to time, building the village and
-improving the castle itself.
+kept playing on that world from time to time, improving the castle and
+building the village.
 
 ### The name
 
 The world was named after *Sainte Jeanne d'Arc*
-[(Saint Joan of Arc)](https://en.wikipedia.org/wiki/Joan_of_Arc),
-which is also ideally the Patron Saint of the village and castle.
+([Saint Joan of Arc](https://en.wikipedia.org/wiki/Joan_of_Arc)),
+who is also ideally the Patron Saint of the village and castle. The name
 Jeanneville is thus composed of *Jeanne* and the suffix *-ville*.
 
 ## The castle's keep
@@ -82,10 +82,12 @@ staircases bring to other parts of the castle.
 
 One of those staircases near the entrance brings to the second floor,
 used as garrison quarters. The quarters can host up to 20 soldiers, each
-with a sword and armor. There is, at the center, a mess hall in which
-soldiers can convene. Thanks to the **Armor Statues** *data pack*, the
-item racks really work, so swords and other items can be taken or
-deposited by right-clicking on them.
+equipped with a sword and armor. There is, in the middle, a mess hall in
+which soldiers can convene.
+
+Thanks to the **Armor Statues** *data pack*, the item racks really work,
+so swords and other items can be taken or deposited by right-clicking on
+them.
 
 <center>
 <img src="keep/mess-hall.webp"
@@ -125,8 +127,8 @@ village and the plains.
 ## The castle's courtyard
 
 Between the castle's entrance and the keep is the courtyard. It is
-surrounded by the castle's walls and can be entered through the
-*gatehouse*. The two main buildings are the chapel and the horse stable.
+surrounded by the walls and can be entered through the *gatehouse*. The
+two main buildings in the courtyard are the chapel and the horse stable.
 
 ### Chapel
 
@@ -162,8 +164,8 @@ up to three horses can stay.
 
 ## The castle's walls
 
-The walls defending the castles have two separate levels: the inner
-level surrounds the keep, while the outer level surrounds the courtyard.
+The walls defending the castle have two separate levels: the inner level
+surrounds the keep, while the outer level surrounds the courtyard.
 Through the entire perimeter of the walls are
 [machicolations](https://en.wikipedia.org/wiki/Machicolation),
 allowing archers standing on top of them to shoot arrows at the
@@ -178,14 +180,92 @@ invaders while keeping themselves mostly protected.
 ### Gatehouse
 
 The castle of Jeanneville is built on top of a steep hill, with only one
-side gentle enough to allow for walking. That side, in which the road is
-also built, is defended by the gatehouse. Being the first line of
-defence, it controls two sliding gates and has two
+side gentle enough to allow for walking. That side, in which the road to
+the village is also built, is defended by the gatehouse. Being the first
+line of defence, it controls two sliding gates and has two
 [murder holes](https://en.wikipedia.org/wiki/Murder_hole)
 in it.
 
 <center>
 <img src="walls/gatehouse.webp"
      alt="Castle's gatehouse"
+     style="width: 40rem">
+</center>
+
+## The village
+
+Built after the castle, the village of Jeanneville is located in the
+plains nearby. It has a watchtower, a church and many houses, each with
+its own function.
+
+### Watchtower
+
+A rectangular tower with room for six fully equipped soldiers. It has a
+mess hall, a storage room and sleeping quarters, as well as a small
+horse stable.
+
+<center>
+<img src="village/watchtower.webp"
+     alt="Village's watchtower"
+     style="width: 40rem">
+</center>
+
+### Church
+
+The church of 'Mater Misericordiae' is built in the
+[gothic style](https://en.wikipedia.org/wiki/Gothic_architecture),
+with a central *nave* and two lower *aisles*. On its side, a bell tower.
+
+Right by the entrance, there is a statue of Sainte Jeanne d'Arc loosely
+inspired by
+[this painting](https://commons.wikimedia.org/wiki/File:Scherrer_jeanne_enters_orlean.jpg)
+made by
+[Jean-Jacques Scherrer](https://en.wikipedia.org/wiki/Jean-Jacques_Scherrer),
+built using yet again the *Armor Statues data pack*.
+
+<center>
+<img src="village/church-front.webp"
+     alt="Front of the church"
+     style="width: 40rem">
+</center>
+
+From the inside of the church, still unfinished, it is possible to see
+the nave's ceiling composed of
+[rib vaults](https://en.wikipedia.org/wiki/Rib_vault),
+while exposed wood covers the two aisles.
+
+<center>
+<img src="village/church-inside.webp"
+     alt="Inside of the church"
+     style="width: 40rem">
+</center>
+
+### Houses
+
+In the village and in the nearby area, there are many houses. Each is
+unique, both in the way it is built and in its function. For example,
+one house is also the blacksmith's workshop, another is a bakery...
+while others are house for the farmers.
+
+Most of the houses share the same style: the ground floor made of stone
+and the higher floors
+[half-timbered](https://en.wikipedia.org/wiki/Timber_framing)
+and
+[jettied](https://en.wikipedia.org/wiki/Jettying).
+
+<center>
+<img src="village/house-outside.webp"
+     alt="Outside of a house"
+     style="width: 40rem">
+</center>
+
+The contents of a house vary greatly. The ground floor may be used
+either as a workshop (e.g. blacksmith) or to store things or animals.
+The first floor usually has a table and beds. Some houses also have an
+attic, used as additional storage or to fit more beds.
+
+<center>
+<img src="village/house-inside.webp"
+     alt="Inside of a house"
      style="width: 40rem">
 </center>
