@@ -1,6 +1,6 @@
 +++
 title = 'The Minecraft castle of Jeanneville'
-date = '2024-02-14'
+date = '2024-02-15'
 
 showtoc = true
 
@@ -70,9 +70,7 @@ staircases bring to other parts of the castle.
 <img src="keep/great-hall.webp"
      alt="Great hall"
      style="width: 40rem">
-</center>
 
-<center>
 <img src="keep/kitchen.webp"
      alt="Kitchen"
      style="width: 40rem">
@@ -106,9 +104,7 @@ to an office) and a small library.
 <img src="keep/office.webp"
      alt="Private office"
      style="width: 40rem">
-</center>
 
-<center>
 <img src="keep/library.webp"
      alt="Castle's library"
      style="width: 40rem">
@@ -143,9 +139,7 @@ Saint Joan and Saint Thérèse of Lisieux.
 <img src="courtyard/chapel-outside.webp"
      alt="Outside of the chapel"
      style="width: 40rem">
-</center>
 
-<center>
 <img src="courtyard/chapel-inside.webp"
      alt="Inside of the chapel"
      style="width: 40rem">
@@ -195,8 +189,8 @@ in it.
 ## The village
 
 Built after the castle, the village of Jeanneville is located in the
-plains nearby. It has a watchtower, a church and many houses, each with
-its own function.
+plains close to it. It has a watchtower, a church and many houses, each
+with its own function.
 
 ### Watchtower
 
@@ -214,7 +208,8 @@ horse stable.
 
 The church of 'Mater Misericordiae' is built in the
 [gothic style](https://en.wikipedia.org/wiki/Gothic_architecture),
-with a central *nave* and two lower *aisles*. On its side, a bell tower.
+with a central *nave* and two *aisles*. On its side there is a bell
+tower.
 
 Right by the entrance, there is a statue of Sainte Jeanne d'Arc loosely
 inspired by
@@ -245,7 +240,6 @@ while exposed wood covers the two aisles.
 In the village and in the nearby area, there are many houses. Each is
 unique, both in the way it is built and in its function. For example,
 one house is also the blacksmith's workshop, another is a bakery...
-while others are house for the farmers.
 
 Most of the houses share the same style: the ground floor made of stone
 and the higher floors
@@ -268,4 +262,31 @@ attic, used as additional storage or to fit more beds.
 <img src="village/house-inside.webp"
      alt="Inside of a house"
      style="width: 40rem">
+</center>
+
+## More screenshots
+
+Here are a few more screenshots of the castle. These were made using the
+[Iris Shaders](https://irisshaders.dev/)
+mod (for
+[Fabric](https://fabricmc.net/))
+and
+[Sildur's Shaders](https://sildurs-shaders.github.io/).
+
+<center>
+<img src="screenshots/1.webp"
+     alt="The castle and village in daylight"
+     style="width: 100%">
+
+<img src="screenshots/2.webp"
+     alt="The castle seen from within the village at night"
+     style="width: 100%">
+
+<img src="screenshots/3.webp"
+     alt="The castle's courtyard at night"
+     style="width: 100%">
+
+<img src="screenshots/4.webp"
+     alt="The castle seen from behind the church at night"
+     style="width: 100%">
 </center>
