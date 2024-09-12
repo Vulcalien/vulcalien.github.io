@@ -1,5 +1,6 @@
 +++
 title = 'Projects'
+layout = 'single'
 +++
 
 A list of the best personal projects I've developed so far.
