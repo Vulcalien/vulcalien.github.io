@@ -16,3 +16,6 @@ rm tmp-48.png
 
 # generate Apple touch icon
 inkscape -w 180 -h 180 favicon.svg -o apple-touch-icon.png -b "#ffffff"
+
+# copy Safari pinned tab icon
+cp favicon.svg safari-pinned-tab.svg
