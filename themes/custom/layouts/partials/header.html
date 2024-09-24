@@ -1,0 +1,25 @@
+<nav>
+  <a class="site-title" href="{{ absLangURL "/" }}">{{ site.Title }}</a>
+
+  <button class="toggle-theme" onclick="theme_toggle()">
+    {{- with resources.Get "svg/theme-button.svg" | minify }}
+      {{- .Content | safeHTML }}
+    {{- end }}
+  </button>
+
+  <ul class="site-menu">
+    {{- range site.Menus.main }}
+    <li {{- if $.IsMenuCurrent .Menu . }} class="active" {{- end }}>
+      <a href="{{ absLangURL .URL }}">
+        {{- .Name }}
+
+        {{- if not .PageRef }}
+          {{- with resources.Get "svg/external-link.svg" | minify }}
+            {{ .Content | safeHTML }}
+          {{- end }}
+        {{- end }}
+      </a>
+    </li>
+    {{- end }}
+  </ul>
+</nav>

@@ -4,7 +4,7 @@ copyright = 'Copyright 2023-2024 Vulcalien'
 
 languageCode = 'en'
 
-theme = 'PaperMod'
+theme = 'custom'
 
 [markup.goldmark.renderer]
     unsafe = true

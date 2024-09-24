@@ -1,0 +1,18 @@
+{{- define "main" }}
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{- if not .Date.IsZero }}
+    <time datetime="{{ .Date | time.Format "2006-01-02" }}">
+      {{- partial "page-date.html" . -}}
+    </time>
+    {{- end }}
+  </header>
+
+  {{- if .Param "ShowToc" }}
+    {{- partial "toc.html" . }}
+  {{- end }}
+
+  <div class="content">
+    {{- partial "content.html" . }}
+  </div>
+{{- end }}

@@ -1,0 +1,120 @@
+@import "themes";
+
+$header-width: 1024px;
+$main-width:   768px;
+$footer-width: $header-width;
+
+$header-height: 4rem;
+$footer-height: 3rem;
+
+$header-margin: 32px;
+$footer-margin: 48px;
+
+$border: 1px solid var(--tertiary);
+
+$radius: 8px;
+
+@import "header", "footer";
+@import "toc", "404";
+
+body {
+  // default background and text color
+  color: var(--secondary);
+  background: var(--background-primary);
+
+  // font
+  font-family: Ubuntu, sans-serif; // TODO
+  font-size: 1.1rem;
+  line-height: 1.6;
+
+  // layout
+  min-height: 100vh;
+  padding: 0 16px;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  // center children horizontally
+  align-items: center;
+}
+
+main {
+  max-width: $main-width;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  // take all the vertical space available
+  flex-grow: 1;
+
+  p { margin: 0.75rem 0 1.2rem 0; }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--primary);
+    line-height: 1.2;
+
+    margin: 0;
+    margin-bottom: 0.75rem;
+
+    a.heading-anchor {
+      color: var(--tertiary);
+      margin-left: 0.2em; // margin is relative to heading size
+
+      visibility: hidden; // hide the anchor by default
+    }
+    &:hover a.heading-anchor { visibility: visible; }
+  }
+
+  h1 { font-size: 2.3em; margin-top: 2.00rem; }
+  h2 { font-size: 1.8em; margin-top: 1.75rem; }
+  h3 { font-size: 1.4em; margin-top: 1.50rem; }
+  h4 { font-size: 1.2em; margin-top: 1.25rem; }
+  h5 { font-size: 1.0em; margin-top: 1.00rem; }
+  h6 { font-size: 0.8em; margin-top: 0.75rem; }
+
+  img {
+    max-width: 100%; // make images shrink if they are too wide
+    border-radius: $radius;
+  }
+
+  a {
+    color: var(--primary);
+    text-decoration: underline;
+  }
+
+  table {
+    border-spacing: 0;
+
+    th, td {
+      padding: 0.5rem 0.6rem;
+      border-bottom: $border;
+    }
+  }
+
+  code {
+    background: var(--background-secondary);
+    padding: 0.2rem;
+    border-radius: $radius;
+  }
+
+  pre {
+    background: var(--background-secondary) !important;
+    border-radius: $radius;
+
+    overflow: scroll;
+
+    padding: 0.5rem;
+    code { padding: 0; }
+  }
+}
+
+.page-header {
+  h1 { margin: 0; }
+
+  time {
+    color: var(--tertiary);
+    font-size: 0.8em;
+  }
+}

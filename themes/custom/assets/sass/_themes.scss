@@ -1,0 +1,24 @@
+// default (light theme)
+body {
+  --primary: #171712;
+  --secondary: #272722;
+  --tertiary: #777777;
+
+  --background-primary: #ffffff;
+  --background-secondary: #f2f2f2;
+
+  button.toggle-theme g.light { visibility: visible; }
+  button.toggle-theme g.dark { visibility: hidden; }
+}
+
+body.dark {
+  --primary: #dadadb;
+  --secondary: #c5c5c5;
+  --tertiary: #9b9b9b;
+
+  --background-primary: #1d1e20;
+  --background-secondary: #2c2c30;
+
+  button.toggle-theme g.light { visibility: hidden; }
+  button.toggle-theme g.dark { visibility: visible; }
+}

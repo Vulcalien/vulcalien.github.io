@@ -1,0 +1,72 @@
+.site-header {
+  max-width: $header-width;
+  width: 100%;
+
+  line-height: $header-height;
+  margin-bottom: $header-margin;
+  border-bottom: $border;
+
+  nav {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  a {
+    color: var(--primary);
+    text-decoration: none;
+
+    padding: 0 0.25rem;
+    display: block; // make the whole area clickable
+  }
+
+  .site-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  button.toggle-theme {
+    color: inherit;
+    background: transparent;
+
+    margin-left: 0.5rem;
+    border: none;
+    cursor: pointer;
+
+    // center toggle button vertically (better than default behavior)
+    display: flex;
+    align-items: center;
+
+    svg { scale: 1.3; }
+  }
+
+  .site-menu {
+    display: flex;
+    flex-flow: row wrap;
+
+    list-style: none;
+    padding: 0;
+
+    // stick menu to the right
+    margin: auto;
+    margin-right: 0;
+
+    @media only screen and (min-width: 768px) {
+      // add extra space between menu items
+      li { margin-left: 0.7rem; }
+    }
+
+    li a {
+      // highlight hovered menu items
+      &:hover { background: var(--background-secondary); }
+
+      // center 'external link' svg
+      svg { vertical-align: middle; }
+    }
+
+    // highlight the menu item pointing to the current page
+    li.active a {
+      text-decoration: underline;
+      font-weight: bold;
+    }
+  }
+}

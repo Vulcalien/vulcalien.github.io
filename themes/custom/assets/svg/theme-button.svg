@@ -1,0 +1,29 @@
+<svg width="38" height="20" xmlns="http://www.w3.org/2000/svg"
+     fill="currentcolor" stroke="currentcolor" stroke-width="1.5">
+  <path fill="none"
+        d="M 10,2
+           a 8,8 0 0 0 0,16
+           h 18
+           a 8,8 0 0 0 0,-16
+           h -18" />
+  <g class="light" transform="translate(10,10)">
+    <circle fill="none" cx="0" cy="0" r="8" />
+    <circle fill="none" stroke-width="0.75" cx="0" cy="0" r="2.5" />
+    <path stroke-width="0.75" stroke-linecap="round"
+          d="M 0,4 v 2
+             M 2.8,2.8 l 1,1
+             M 4,0 h 2
+             M 2.8,-2.8 l 1,-1
+             M 0,-4 v -2
+             M -2.8,-2.8 l -1,-1
+             M -4,0 h -2
+             M -2.8,2.8 l -1,1" />
+  </g>
+  <g class="dark" transform="translate(28,10)">
+    <circle fill="none" cx="0" cy="0" r="8" />
+    <path fill="none" stroke-width="0.75" stroke-linejoin="round"
+          d="M -2,-4.83
+             a 5,5 0 1 0 6.04,7.87
+             a 7,7 0 0 1 -6.04,-7.87 Z" />
+  </g>
+</svg>

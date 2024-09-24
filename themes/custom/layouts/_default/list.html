@@ -1,0 +1,29 @@
+{{- define "main" }}
+  {{- if not .IsHome }}
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+  </div>
+  {{- end }}
+
+  <div class="content">
+    {{- partial "content.html" . }}
+  </div>
+
+  {{- if .IsHome }}
+  <h2>Recent posts</h2>
+  {{- end }}
+
+  {{- $pages := .Pages }}
+  {{- if .IsHome }}
+    {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
+  {{- end }}
+
+  <div class="list-items">
+    {{- range $pages }}
+    <div>
+      [{{ partial "page-date.html" . -}}] -
+      <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+    </div>
+    {{- end }}
+  </div>
+{{- end }}

@@ -1,0 +1,19 @@
+.site-footer {
+  min-height: $footer-height;
+  max-width: $footer-width;
+  width: 100%;
+
+  margin-top: $footer-margin;
+  border-top: $border;
+
+  display: flex;
+  flex-direction: column;
+
+  // center children horizontally and vertically
+  justify-content: center;
+  align-items: center;
+
+  font-size: 0.8rem;
+  * { color: var(--tertiary); }
+  a { text-decoration: underline; }
+}
