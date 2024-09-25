@@ -11,7 +11,7 @@ console the game is for. For example, this is the box cover of
 'Minicraft for GBA'.
 
 <center>
-<img src="/images/minicraft-gba-boxart.webp"
+<img src="minicraft-gba-boxart.webp"
      style="width: 22rem">
 </center>
 
@@ -24,12 +24,12 @@ image in the hope that someone else might find this useful.
 
 ## Downloads
 
-<a download href="gba-cover-label.svg">
+<a download href="download/gba-cover-label.svg">
     gba-cover-label.svg
 </a>: the SVG image<br>
-<a download href="gba-cover-label-1024.png">
+<a download href="download/gba-cover-label-1024.png">
     gba-cover-label-1024.png
 </a>: 1024 x 288 image exported from Inkscape<br>
-<a download href="gba-cover-label-512.png">
+<a download href="download/gba-cover-label-512.png">
     gba-cover-label-512.png
 </a>: 512 x 144 image exported from Inkscape<br>
