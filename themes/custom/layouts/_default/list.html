@@ -18,12 +18,12 @@
     {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
   {{- end }}
 
-  <div class="list-items">
+  <ol class="list-pages">
     {{- range $pages }}
-    <div>
+    <li>
       [{{ partial "page-date.html" . -}}] -
       <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
-    </div>
+    </li>
     {{- end }}
-  </div>
+  </ol>
 {{- end }}
