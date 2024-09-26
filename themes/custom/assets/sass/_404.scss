@@ -1,13 +1,10 @@
 .page-not-found {
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
+  justify-content: center; // vertical
 
   // take all the vertical space available
   flex-grow: 1;
-
-  // center children horizontally and vertically
-  justify-content: center;
-  align-items: center;
 
   text-align: center;
   font-size: 3.5rem;

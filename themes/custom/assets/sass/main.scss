@@ -18,6 +18,10 @@ $radius: 8px;
 @import "toc", "404";
 
 body {
+  display: flex;
+  flex-flow: column;
+  align-items: center; // horizontal
+
   // default background and text color
   color: var(--secondary);
   background: var(--background-primary);
@@ -31,20 +35,14 @@ body {
   min-height: 100vh;
   padding: 0 16px;
   margin: 0;
-
-  display: flex;
-  flex-direction: column;
-
-  // center children horizontally
-  align-items: center;
 }
 
 main {
+  display: flex;
+  flex-flow: column;
+
   max-width: $main-width;
   width: 100%;
-
-  display: flex;
-  flex-direction: column;
 
   // take all the vertical space available
   flex-grow: 1;

@@ -1,17 +1,14 @@
 .site-footer {
+  display: flex;
+  flex-flow: column;
+  justify-content: center; // vertical
+
   min-height: $footer-height;
   max-width: $footer-width;
   width: 100%;
 
   margin-top: $footer-margin;
   border-top: $border;
-
-  display: flex;
-  flex-direction: column;
-
-  // center children horizontally and vertically
-  justify-content: center;
-  align-items: center;
 
   text-align: center;
   font-size: 0.8rem;
