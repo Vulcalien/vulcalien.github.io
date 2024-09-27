@@ -1,8 +1,6 @@
 @import "themes";
 
-$header-width: 1024px;
 $main-width:   768px;
-$footer-width: $header-width;
 
 $header-height: 4rem;
 $footer-height: 3rem;
@@ -33,7 +31,7 @@ body {
 
   // layout
   min-height: 100vh;
-  padding: 0 16px;
+  padding: 0;
   margin: 0;
 }
 
@@ -42,7 +40,7 @@ main {
   flex-flow: column;
 
   max-width: $main-width;
-  width: 100%;
+  width: calc(100% - 32px);
 
   // take all the vertical space available
   flex-grow: 1;
