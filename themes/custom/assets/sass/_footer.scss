@@ -10,8 +10,14 @@
   margin-top: $footer-margin;
   border-top: $border;
 
+  background: var(--background-primary);
+  color: var(--tertiary);
+
   text-align: center;
   font-size: 0.8rem;
-  * { color: var(--tertiary); }
-  a { text-decoration: underline; }
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
 }
