@@ -1,8 +1,4 @@
 .site-header {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: stretch; // vertical
-
   min-height: $header-height;
   width: 100%;
 
@@ -11,6 +7,14 @@
 
   background: var(--background-primary);
   color: var(--primary);
+
+  .header-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch; // vertical
+
+    margin: 0 $content-padding;
+  }
 
   a {
     display: flex;

@@ -1,8 +1,4 @@
 .site-footer {
-  display: flex;
-  flex-flow: column;
-  justify-content: center; // vertical
-
   min-height: $footer-height;
   width: 100%;
 
@@ -14,6 +10,14 @@
 
   text-align: center;
   font-size: 0.8rem;
+
+  .footer-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center; // vertical
+
+    margin: 0 $content-padding;
+  }
 
   a {
     color: inherit;
