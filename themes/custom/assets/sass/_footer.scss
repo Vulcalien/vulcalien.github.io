@@ -1,4 +1,6 @@
 .site-footer {
+  display: flex;
+
   min-height: $footer-height;
   width: 100%;
 
@@ -15,6 +17,8 @@
     display: flex;
     flex-flow: column;
     justify-content: center; // vertical
+
+    flex-grow: 1;
 
     margin: 0 $content-padding;
   }

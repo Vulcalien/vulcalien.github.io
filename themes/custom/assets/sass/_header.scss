@@ -1,4 +1,6 @@
 .site-header {
+  display: flex;
+
   min-height: $header-height;
   width: 100%;
 
@@ -12,6 +14,8 @@
     display: flex;
     flex-flow: row wrap;
     align-items: stretch; // vertical
+
+    flex-grow: 1;
 
     margin: 0 $content-padding;
   }
