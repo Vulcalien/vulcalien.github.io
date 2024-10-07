@@ -1,45 +1,35 @@
-const STORAGE_KEY = "theme";
-const THEME_CLASS = "dark";
-
 const LIGHT = 'light';
 const DARK  = 'dark';
 
 // === get/set preferred theme ===
 function theme_preferred_get() {
-    let result = localStorage.getItem(STORAGE_KEY);
+    let stored = localStorage.getItem('theme');
+    if(stored)
+        return stored;
 
-    if(result == null) {
-        // try to read the preferred color scheme
-        if(window.matchMedia) {
-            if(window.matchMedia('(prefers-color-scheme: dark)').matches)
-                result = DARK;
-            else
-                result = LIGHT;
-        } else {
-            // default (media queries not supported)
-            result = LIGHT;
-        }
+    // try to read the preferred color scheme
+    if(window.matchMedia) {
+        if(window.matchMedia('(prefers-color-scheme: dark)').matches)
+            return DARK;
+        else
+            return LIGHT;
     }
 
-    return result;
+    // default theme
+    return LIGHT;
 }
 
 function theme_preferred_set(theme) {
-    localStorage.setItem(STORAGE_KEY, theme);
+    localStorage.setItem('theme', theme);
 }
 
 // === get/set current theme ===
 function theme_get() {
-    if(document.body.classList.contains(THEME_CLASS))
-        return DARK;
-    return LIGHT;
+    return document.body.className;
 }
 
 function theme_set(theme) {
-    if(theme == DARK)
-        document.body.classList.add(THEME_CLASS);
-    else
-        document.body.classList.remove(THEME_CLASS);
+    document.body.className = theme;
 }
 
 function theme_toggle() {
