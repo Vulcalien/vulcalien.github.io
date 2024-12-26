@@ -23,8 +23,8 @@ body {
   align-items: center; // horizontal
 
   // default background and text color
-  color: var(--secondary);
   background: var(--background-primary);
+  color: var(--secondary);
 
   // font
   font-family: Ubuntu, sans-serif; // TODO
@@ -98,9 +98,7 @@ main {
   }
 
   pre {
-    background: var(--background-secondary) !important;
     border-radius: $radius;
-
     overflow: scroll;
 
     padding: 0.5rem;
