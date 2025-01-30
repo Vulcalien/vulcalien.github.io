@@ -1,9 +1,8 @@
 +++
 title = 'Rhino Express for GBA'
-date = '2025-01-25'
+date = '2025-01-30'
 
 showtoc = true
-draft = true
 +++
 
 <center>
