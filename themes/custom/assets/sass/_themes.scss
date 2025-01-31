@@ -22,14 +22,22 @@ body.light {
 }
 
 body.dark {
-  --primary: #dadadb;
+  --primary: #dddddd;
   --secondary: #c5c5c5;
   --tertiary: #b0b0b0;
 
-  --links: #dadadb;
+  --links: #22bb7b;
 
   --background-primary: #1d1e20;
   --background-secondary: #2c2c30;
+
+  .site-header, .site-footer {
+    --primary: #eeeeee;
+    --tertiary: #bbbbbb;
+
+    --background-primary: #005538;
+    --background-secondary: #006643;
+  }
 
   @include toggle-theme-button(dark);
 }
