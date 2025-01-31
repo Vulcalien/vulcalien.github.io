@@ -9,14 +9,22 @@
 }
 
 body.light {
-  --primary: #171712;
-  --secondary: #272722;
+  --primary: #222222;
+  --secondary: #282828;
   --tertiary: #777777;
 
-  --links: #171712;
+  --links: #22704a;
 
   --background-primary: #ffffff;
   --background-secondary: #f2f2f2;
+
+  .site-header, .site-footer {
+    --primary: #ffffff;
+    --tertiary: #eeeeee;
+
+    --background-primary: #00704a;
+    --background-secondary: #00603f;
+  }
 
   @include toggle-theme-button(light);
 }
