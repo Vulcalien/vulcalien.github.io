@@ -8,43 +8,69 @@
   }
 }
 
+// input:
+// - $h in [0, 360), hue
+// - $s in [0, 1], saturation
+// - $v in [0, 1], value
+// output:
+// - RGB color
+@function hsv($h, $s, $v) {
+  $c: $v * $s;
+  $x: $c * (1 - abs(($h / 60) % 2 - 1));
+
+  $rgb: nth([
+    [$c, $x, 0 ],
+    [$x, $c, 0 ],
+    [0,  $c, $x],
+    [0,  $x, $c],
+    [$x, 0,  $c],
+    [$c, 0,  $x],
+  ], 1 + floor($h / 60));
+
+  $r: round( (nth($rgb, 1) + $v - $c) * 255 );
+  $g: round( (nth($rgb, 2) + $v - $c) * 255 );
+  $b: round( (nth($rgb, 3) + $v - $c) * 255 );
+
+  @return rgb($r, $g, $b);
+}
+
 body.light {
-  --primary: #222222;
-  --secondary: #282828;
-  --tertiary: #777777;
+  --primary:   #{hsv(0, 0, .13)};
+  --secondary: #{hsv(0, 0, .15)};
+  --tertiary:  #{hsv(0, 0, .46)};
 
-  --links: #22704a;
+  --links: #{hsv(159, 1, .4)};
 
-  --background-primary: #ffffff;
-  --background-secondary: #f2f2f2;
+  --background-primary:   #{hsv(0, 0, 1)};
+  --background-secondary: #{hsv(0, 0, .95)};
 
   .site-header, .site-footer {
-    --primary: #ffffff;
-    --tertiary: #eeeeee;
+    --primary:  #{hsv(0, 0, 1)};
+    --tertiary: #{hsv(0, 0, .93)};
 
-    --background-primary: #00704a;
-    --background-secondary: #00603f;
+    --background-primary:   #{hsv(159, 1, .44)};
+    --background-secondary: #{hsv(159, 1, .37)};
   }
 
   @include toggle-theme-button(light);
 }
 
 body.dark {
-  --primary: #dddddd;
-  --secondary: #c5c5c5;
-  --tertiary: #b0b0b0;
+  --primary:   #{hsv(0, 0, .86)};
+  --secondary: #{hsv(0, 0, .77)};
+  --tertiary:  #{hsv(0, 0, .69)};
 
-  --links: #22bb7b;
+  --links: #{hsv(159, .8, .72)};
 
-  --background-primary: #1d1e20;
-  --background-secondary: #2c2c30;
+  --background-primary:   #{hsv(220, .1, .125)};
+  --background-secondary: #{hsv(240, .1, .19)};
 
   .site-header, .site-footer {
-    --primary: #eeeeee;
-    --tertiary: #bbbbbb;
+    --primary:  #{hsv(0, 0, .93)};
+    --tertiary: #{hsv(0, 0, .73)};
 
-    --background-primary: #005538;
-    --background-secondary: #006643;
+    --background-primary:   #{hsv(159, 1, .33)};
+    --background-secondary: #{hsv(159, 1, .40)};
   }
 
   @include toggle-theme-button(dark);
