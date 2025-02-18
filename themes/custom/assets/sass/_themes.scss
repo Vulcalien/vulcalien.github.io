@@ -39,7 +39,7 @@ body.light {
   --secondary: #{hsv(0, 0, .15)};
   --tertiary:  #{hsv(0, 0, .46)};
 
-  --links: #{hsv(159, 1, .4)};
+  --links: #{hsv(160, 1, .4)};
 
   --background-primary:   #{hsv(0, 0, 1)};
   --background-secondary: #{hsv(0, 0, .95)};
@@ -48,8 +48,8 @@ body.light {
     --primary:  #{hsv(0, 0, 1)};
     --tertiary: #{hsv(0, 0, .93)};
 
-    --background-primary:   #{hsv(159, 1, .44)};
-    --background-secondary: #{hsv(159, 1, .37)};
+    --background-primary:   #{hsv(160, 1, .44)};
+    --background-secondary: #{hsv(160, 1, .37)};
   }
 
   @include toggle-theme-button(light);
@@ -60,7 +60,7 @@ body.dark {
   --secondary: #{hsv(0, 0, .77)};
   --tertiary:  #{hsv(0, 0, .69)};
 
-  --links: #{hsv(159, .8, .72)};
+  --links: #{hsv(160, .8, .72)};
 
   --background-primary:   #{hsv(220, .1, .125)};
   --background-secondary: #{hsv(240, .1, .19)};
@@ -69,8 +69,8 @@ body.dark {
     --primary:  #{hsv(0, 0, .93)};
     --tertiary: #{hsv(0, 0, .73)};
 
-    --background-primary:   #{hsv(159, 1, .33)};
-    --background-secondary: #{hsv(159, 1, .40)};
+    --background-primary:   #{hsv(160, 1, .33)};
+    --background-secondary: #{hsv(160, 1, .40)};
   }
 
   @include toggle-theme-button(dark);
