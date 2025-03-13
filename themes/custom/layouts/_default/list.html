@@ -18,11 +18,13 @@
     {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
   {{- end }}
 
-  <ol class="list-pages">
+  <ol class="list-posts">
     {{- range $pages }}
     <li>
-      [{{ partial "page-date.html" . -}}] -
-      <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+      <time datetime="{{ .Date | time.Format "2006-01-02" }}">
+        {{- partial "page-date.html" . -}}
+      </time>
+      <h3><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></h3>
     </li>
     {{- end }}
   </ol>
