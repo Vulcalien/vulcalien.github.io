@@ -13,6 +13,8 @@ A list of the best personal projects I've developed so far.
   containing essential utilities and build files for the GBA.
 - [gba-game-template](https://github.com/Vulcalien/gba-game-template): a
   template for GBA games, including a 2D level engine.
+- [res2gba](https://github.com/Vulcalien/res2gba): a tool that converts
+  resources into GBA-readable formats for embedding.
 
 ### Various
 - [libcliscreen](https://github.com/Vulcalien/libsimplegba): a C library
