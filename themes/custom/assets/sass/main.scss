@@ -56,9 +56,7 @@ main {
     margin-bottom: 0.75rem;
 
     a.heading-anchor {
-      color: var(--tertiary);
       margin-left: 0.2em; // margin is relative to heading size
-
       visibility: hidden; // hide the anchor by default
     }
     &:hover a.heading-anchor { visibility: visible; }
