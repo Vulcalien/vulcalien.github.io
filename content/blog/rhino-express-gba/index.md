@@ -30,7 +30,7 @@ place of the *Ludum Dare 53* competition and was released as a
 ## GBA port of Rhino Express
 
 ### Why I ported it
-I like working on the GBA for a few reasons.
+I like working on the GBA for a few reasons:
 - Widespread emulation: thanks to emulators, the games I port can be
   played on a great variety of devices.
 - Consistent experience: the console's specifications are fixed and will
