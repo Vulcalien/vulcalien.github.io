@@ -39,17 +39,17 @@ body.light {
   --secondary: #{hsv(0, 0, .15)};
   --tertiary:  #{hsv(0, 0, .40)};
 
-  --links: #{hsv(160, 1, .5)};
+  --links: #{hsv(155, 1, .5)};
 
   --background-primary:   #{hsv(0, 0, 1)};
   --background-secondary: #{hsv(0, 0, .95)};
 
   .site-header, .site-footer {
-    --primary:  #{hsv(0, 0, 1)};
-    --tertiary: #{hsv(0, 0, .93)};
+    --primary:  inherit;
+    --tertiary: inherit;
 
-    --background-primary:   #{hsv(160, 1, .44)};
-    --background-secondary: #{hsv(160, 1, .37)};
+    --background-primary:   #{hsv(0, 0, .95)};
+    --background-secondary: #{hsv(0, 0, .90)};
   }
 
   @include toggle-theme-button(light);
@@ -60,17 +60,17 @@ body.dark {
   --secondary: #{hsv(0, 0, .77)};
   --tertiary:  #{hsv(0, 0, .69)};
 
-  --links: #{hsv(160, .8, .72)};
+  --links: #{hsv(155, .8, .72)};
 
-  --background-primary:   #{hsv(220, .1, .125)};
-  --background-secondary: #{hsv(240, .1, .19)};
+  --background-primary:   #{hsv(220, 0.1, .075)};
+  --background-secondary: #{hsv(220, 0.1, .125)};
 
   .site-header, .site-footer {
-    --primary:  #{hsv(0, 0, .93)};
-    --tertiary: #{hsv(0, 0, .73)};
+    --primary:  inherit;
+    --tertiary: inherit;
 
-    --background-primary:   #{hsv(160, 1, .33)};
-    --background-secondary: #{hsv(160, 1, .40)};
+    --background-primary:   #{hsv(220, 0.1, .1)};
+    --background-secondary: #{hsv(220, 0.1, .15)};
   }
 
   @include toggle-theme-button(dark);
