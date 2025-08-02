@@ -62,15 +62,15 @@ body.dark {
 
   --links: #{hsv(155, .8, .72)};
 
-  --background-primary:   #{hsv(220, 0.1, .075)};
-  --background-secondary: #{hsv(220, 0.1, .125)};
+  --background-primary:   #{hsv(220, 0.1, .1)};
+  --background-secondary: #{hsv(220, 0.1, .15)};
 
   .site-header, .site-footer {
     --primary:  inherit;
     --tertiary: inherit;
 
-    --background-primary:   #{hsv(220, 0.1, .1)};
-    --background-secondary: #{hsv(220, 0.1, .15)};
+    --background-primary:   #{hsv(220, 0.1, .125)};
+    --background-secondary: #{hsv(220, 0.1, .175)};
   }
 
   @include toggle-theme-button(dark);
