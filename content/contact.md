@@ -3,7 +3,7 @@ title = 'Contact me'
 +++
 
 ### Email
-Reach me by email at this address: vulcalien@vulcalien.net
+Reach me by email at this address: website@vulcalien.net
 
 ### GitHub
 If the message is related to a problem in one of my projects, consider
