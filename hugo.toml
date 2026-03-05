@@ -1,5 +1,5 @@
 baseURL = 'https://vulcalien.net/'
-title = "Vulcalien's website"
+title = 'vulcalien.net'
 copyright = 'Copyright 2023-2025 Vulcalien'
 
 languageCode = 'en'
