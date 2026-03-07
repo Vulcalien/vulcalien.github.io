@@ -1,23 +1,16 @@
 .site-header {
   display: flex;
+  flex-flow: row wrap;
 
+  box-sizing: border-box;
   min-height: $header-height;
   width: 100%;
 
+  padding: 0 $content-padding;
   margin-bottom: $header-margin;
 
   background: var(--background-primary);
   color: var(--primary);
-
-  .header-container {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: stretch; // vertical
-
-    flex-grow: 1;
-
-    margin: 0 $content-padding;
-  }
 
   a {
     display: flex;

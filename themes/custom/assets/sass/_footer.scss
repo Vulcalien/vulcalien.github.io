@@ -1,9 +1,13 @@
 .site-footer {
   display: flex;
+  flex-flow: column;
+  justify-content: center;
 
+  box-sizing: border-box;
   min-height: $footer-height;
   width: 100%;
 
+  padding: 0 $content-padding;
   margin-top: $footer-margin;
 
   background: var(--background-primary);
@@ -11,16 +15,6 @@
 
   text-align: center;
   font-size: 0.8rem;
-
-  .footer-container {
-    display: flex;
-    flex-flow: column;
-    justify-content: center; // vertical
-
-    flex-grow: 1;
-
-    margin: 0 $content-padding;
-  }
 
   a {
     color: inherit;

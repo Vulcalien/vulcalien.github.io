@@ -1,28 +1,26 @@
-<div class="header-container">
-  <a class="site-title" href="{{ absLangURL "/" }}">{{ site.Title }}</a>
+<a class="site-title" href="{{ absLangURL "/" }}">{{ site.Title }}</a>
 
-  <button class="toggle-theme" onclick="theme_toggle()"
-          aria-label="toggle theme">
-    {{- with resources.Get "svg/theme-button.svg" | minify }}
-      {{- .Content | safeHTML }}
-    {{- end }}
-  </button>
+<button class="toggle-theme" onclick="theme_toggle()"
+        aria-label="toggle theme">
+  {{- with resources.Get "svg/theme-button.svg" | minify }}
+    {{- .Content | safeHTML }}
+  {{- end }}
+</button>
 
-  <nav class="site-menu">
-    <ul>
-      {{- range site.Menus.main }}
-      <li {{- if $.IsMenuCurrent .Menu . }} class="active" {{- end }}>
-        <a href="{{ absLangURL .URL }}">
-          {{- .Name }}
+<nav class="site-menu">
+  <ul>
+    {{- range site.Menus.main }}
+    <li {{- if $.IsMenuCurrent .Menu . }} class="active" {{- end }}>
+      <a href="{{ absLangURL .URL }}">
+        {{- .Name }}
 
-          {{- if not .PageRef }}
-            {{- with resources.Get "svg/external-link.svg" | minify }}
-              {{ .Content | safeHTML }}
-            {{- end }}
+        {{- if not .PageRef }}
+          {{- with resources.Get "svg/external-link.svg" | minify }}
+            {{ .Content | safeHTML }}
           {{- end }}
-        </a>
-      </li>
-      {{- end }}
-    </ul>
-  </nav>
-</div>
+        {{- end }}
+      </a>
+    </li>
+    {{- end }}
+  </ul>
+</nav>
