@@ -31,14 +31,14 @@
   button.theme, button.menu {
     display: flex;
     flex-flow: column;
-    justify-content: center; // vertical
-
-    color: inherit;
-    background: transparent;
+    justify-content: center;
 
     margin: 0 0.5rem;
     border: none;
     cursor: pointer;
+
+    color: inherit;
+    background: transparent;
 
     svg { scale: 1.3; }
   }
