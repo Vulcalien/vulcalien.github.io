@@ -6,8 +6,8 @@
   {{- end }}
 </button>
 
-<nav class="site-menu">
-  <ul>
+<nav>
+  <ul class="site-menu">
     {{- range site.Menus.main }}
     <li {{- if $.IsMenuCurrent .Menu . }} class="active" {{- end }}>
       <a href="{{ absLangURL .URL }}">
