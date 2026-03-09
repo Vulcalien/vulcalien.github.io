@@ -1,15 +1,15 @@
-<svg width="38" height="20" xmlns="http://www.w3.org/2000/svg"
+<svg width="36" height="20" xmlns="http://www.w3.org/2000/svg"
      fill="currentcolor" stroke="currentcolor" stroke-width="1.5">
   <path fill="none"
         d="M 10,2
            a 8,8 0 0 0 0,16
-           h 18
+           h 16
            a 8,8 0 0 0 0,-16
-           h -18" />
+           Z" />
   <g class="light" transform="translate(10,10)">
     <circle cx="0" cy="0" r="5" />
   </g>
-  <g class="dark" transform="translate(28,10)">
+  <g class="dark" transform="translate(26,10)">
     <circle cx="0" cy="0" r="5" />
   </g>
 </svg>
