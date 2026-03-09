@@ -3,7 +3,6 @@
   flex-flow: row wrap;
 
   box-sizing: border-box;
-  min-height: $header-height;
   width: 100%;
 
   padding: 0 $content-padding;
@@ -11,6 +10,12 @@
 
   background: var(--background-primary);
   color: var(--primary);
+
+  .site-title {
+    padding: 0.8rem 0.25rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
 
   a {
     display: flex;
@@ -21,11 +26,6 @@
 
     color: inherit;
     text-decoration: none;
-  }
-
-  .site-title {
-    font-size: 1.5rem;
-    font-weight: bold;
   }
 
   button.theme, button.menu {
