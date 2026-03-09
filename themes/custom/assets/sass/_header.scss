@@ -28,7 +28,7 @@
     font-weight: bold;
   }
 
-  button.theme {
+  button.theme, button.menu {
     display: flex;
     flex-flow: column;
     justify-content: center; // vertical
