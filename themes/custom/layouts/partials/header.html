@@ -6,20 +6,18 @@
   {{- end }}
 </button>
 
-<nav>
-  <ul class="site-menu">
-    {{- range site.Menus.main }}
-    <li {{- if $.IsMenuCurrent .Menu . }} class="active" {{- end }}>
-      <a href="{{ absLangURL .URL }}">
-        {{- .Name }}
+<ul class="site-menu">
+  {{- range site.Menus.main }}
+  <li {{- if $.IsMenuCurrent .Menu . }} class="active" {{- end }}>
+    <a href="{{ absLangURL .URL }}">
+      {{- .Name }}
 
-        {{- if not .PageRef }}
-          {{- with resources.Get "svg/external-link.svg" | minify }}
-            {{ .Content | safeHTML }}
-          {{- end }}
+      {{- if not .PageRef }}
+        {{- with resources.Get "svg/external-link.svg" | minify }}
+          {{ .Content | safeHTML }}
         {{- end }}
-      </a>
-    </li>
-    {{- end }}
-  </ul>
-</nav>
+      {{- end }}
+    </a>
+  </li>
+  {{- end }}
+</ul>
