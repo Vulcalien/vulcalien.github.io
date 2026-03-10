@@ -6,6 +6,12 @@
   {{- end }}
 </button>
 
+<button class="menu" onclick="menu_toggle()" aria-label="toggle menu">
+  {{- with resources.Get "svg/menu.svg" | minify }}
+    {{- .Content | safeHTML }}
+  {{- end }}
+</button>
+
 <ul class="site-menu">
   {{- range site.Menus.main }}
   <li {{- if $.IsMenuCurrent .Menu . }} class="active" {{- end }}>

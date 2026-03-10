@@ -19,54 +19,79 @@
 
   a {
     display: flex;
-    flex-flow: row nowrap;
     align-items: center;
-
-    padding: 0.5rem 0.25rem;
 
     color: inherit;
     text-decoration: none;
   }
-
-  button.theme, button.menu {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-
-    margin: 0 0.5rem;
-    border: none;
-    cursor: pointer;
-
-    color: inherit;
-    background: transparent;
-
-    svg { scale: 1.3; }
-  }
 }
 
-ul.site-menu {
+button.theme, button.menu {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column;
+  justify-content: center;
 
+  margin: 0 0.5rem;
+  border: none;
+  cursor: pointer;
+
+  color: inherit;
+  background: transparent;
+
+  svg { scale: 1.3; }
+}
+
+button.menu { margin-left: auto; }
+
+ul.site-menu {
+  display: none;
+  flex-flow: column wrap;
+  justify-content: left;
+
+  // remove list style
   list-style: none;
+  margin: 0;
   padding: 0;
-  margin: 0 0 0 auto;
 
-  li { display: flex; }
+  width: 100%;
+  padding-bottom: $content-padding;
 
-  @media only screen and (min-width: 768px) {
-    // add extra space between menu items
-    li { margin-left: 0.7rem; }
+  li {
+    display: flex;
+    a {
+      width: 100%;
+      padding: 0.5rem 0.25rem;
+    }
   }
 
-  // highlight hovered menu items
+  // highlight menu item on hover
   li a:hover {
     background: var(--background-secondary);
+    border-radius: $radius;
   }
 
-  // highlight the menu item pointing to the current page
+  // highlight menu item pointing to current page
   li.active a {
     text-decoration: underline;
     font-weight: bold;
+  }
+}
+
+ul.site-menu.open {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  button.menu { display: none; }
+
+  ul.site-menu {
+    display: flex;
+    flex-flow: row wrap;
+    width: auto;
+
+    margin-left: auto;
+    padding: 0;
+
+    li { margin-left: 0.7rem; }
   }
 }
