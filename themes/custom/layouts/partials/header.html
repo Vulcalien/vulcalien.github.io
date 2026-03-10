@@ -1,7 +1,7 @@
 <a class="site-title" href="{{ absLangURL "/" }}">{{ site.Title }}</a>
 
 <button class="theme" onclick="theme_toggle()" aria-label="toggle theme">
-  {{- with resources.Get "svg/theme-button.svg" | minify }}
+  {{- with resources.Get "svg/theme.svg" | minify }}
     {{- .Content | safeHTML }}
   {{- end }}
 </button>
