@@ -41,7 +41,15 @@ button.theme, button.menu {
   svg { scale: 1.3; }
 }
 
-button.menu { margin-left: auto; }
+button.menu {
+  margin-left: auto;
+  g.open { visibility: hidden; }
+}
+
+button.menu.open {
+  g.open { visibility: visible; }
+  g.closed { visibility: hidden; }
+}
 
 ul.site-menu {
   display: none;
