@@ -1,9 +1,9 @@
 @mixin theme-button($theme) {
-  button.theme g.light {
+  .theme-button g.light {
     visibility: if($theme == 'light', visible, hidden);
   }
 
-  button.theme g.dark {
+  .theme-button g.dark {
     visibility: if($theme == 'dark', visible, hidden);
   }
 }
