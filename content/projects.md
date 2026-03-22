@@ -19,8 +19,6 @@ layout = 'single'
   containing essential utilities and build files for the GBA.
 - [res2gba](https://github.com/Vulcalien/res2gba): tool that converts
   resources into GBA-readable formats for embedding.
-- [gba-game-template](https://github.com/Vulcalien/gba-game-template):
-  template for GBA games, including a 2D level engine.
 
 ### Various
 - [libcliscreen](https://github.com/Vulcalien/libsimplegba): C library
